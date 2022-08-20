@@ -2,7 +2,7 @@
 function keyWordsearch(){
 
         $(".loader").show();
-        gapi.client.setApiKey("AIzaSyDhrvd3YifzhdGGr3QOz3_0W2eP8HRT2SQ");
+        gapi.client.setApiKey("AIzaSyAaImzZRaLLgU-htsBbKDa7-tUzZQ-2XRI");
         gapi.client.load('youtube', 'v3', function() {
             makeRequest();
         });
