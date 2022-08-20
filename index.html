@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Project Youtube Api</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/login-style.css">
+
+</head>
+<body>
+<div class="loader"></div>
+
+
+<div class="container">
+
+<div class="row">
+    <div class="col-md-1 ">
+        <img class="img-responsive logo" src="https://www.youtube.com/yt/brand/media/image/YouTube-icon-full_color.png" width="100" height="100"/>
+    </div>
+    <div class="col-md-5">
+        <h1> Youtube Api Search Videos</h1>
+    </div>
+<div class="col-md-5">
+    <div class="input-group">
+        <input id="query" type="text" class="form-control" placeholder="Search for a video">
+        <span class="input-group-btn">
+        <button id="search-button" onclick="keyWordsearch()" class="btn btn-secondary searchBtn" type="button" >Go!</button>
+      </span>
+    </div>
+</div>
+    <div class="col-md-1">
+            <button class="btn-logout btn btn-danger"><span class="glyphicon glyphicon-off"></span> Logout</button>
+    </div>
+</div>
+    <div class="row">
+        <div class="col-md-12">
+            <div id="results"></div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md12 pull-right nextpr">
+            <button type="button" id="prev" onclick="prevB()" class="btn btn-danger">Previous</button>
+            <button type="button" id="next" onclick="nextB()" class="btn btn-danger">Next</button>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+
+<script src="script/script.js"></script>
+<script src="https://apis.google.com/js/client.js?onload=googleApiClientReady">  </script>
+<script src="script/login-script.js"></script>
+</body>
+</html>
